@@ -1,0 +1,18 @@
+# Secrets and credentials
+.env*
+!.env.example
+token.json
+.tesla_tokens.json
+
+# Private and public keys 
+*.pem
+
+# Local command-signing proxy: holds fleet-key.pem, tls-key.pem, tls-cert.pem.
+# If non-secret files (Dockerfile, compose.yml) are added here later, narrow
+# this to `tesla-proxy/config/*.pem` so they aren't silently skipped.
+tesla-proxy/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
